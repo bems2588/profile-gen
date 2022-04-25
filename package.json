@@ -1,0 +1,24 @@
+{
+  "name": "profile-gen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose test/*",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bems2588/profile-gen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bems2588/profile-gen/issues"
+  },
+  "homepage": "https://github.com/bems2588/profile-gen#readme",
+  "dependencies": {
+    "inquirer": "^8.2.2",
+    "jest": "^28.0.0"
+  }
+}
