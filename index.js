@@ -113,3 +113,46 @@ function acceptIntern() {
 };
 
 acceptManager();
+
+
+function acceptEngineer() {
+  inquirer.prompt([
+    {
+      type: "input",
+      message: "Enter Engineer name: ",
+      name: "name"
+    },
+    {
+      type: "input",
+      message: "Enter Engineer ID: ",
+      name: "id"
+    },
+    {
+      type: "input",
+      message: "Enter Engineer email: ",
+      name: "email"
+    },
+    {
+      type: "input",
+      message: "Enter Engineer Github: ",
+      name: "github"
+    },
+  ]).then(({ name, id, email, school }) => {
+    const newEngineer = new Engineer(name, id, email, github);
+    employeeHTML += `<div class="card" style="width: 18rem;">
+    <div class="text-center bg-primary">
+    <h3>${newEngineer.name}</h3>
+    <p>Intern</p>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">ID: ${newEngineer.id}</h5>
+      <p class="card-text">Github ${newEngineer.github}</p>
+      <a href="mailto:${newEngineer.email}" class="btn btn-primary">Email: ${newEngineer.email}</a>
+    </div>
+  </div>`
+    console.log(employeeHTML);
+    addTeamMember();
+  });
+};
+
+acceptManager();
