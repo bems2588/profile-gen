@@ -171,7 +171,7 @@ function exitapp() {
     <header class="bg-primary text-center">
       <h1>Team Profile Generator</h1>
        </header>
-       <main class="d-flex flex-wrap">
+       <main class="d-flex flex-wrap container mt-2 pt-2">
        ${employeeHTML}
        </main>
       <!-- Optional JavaScript; choose one of the two! -->
